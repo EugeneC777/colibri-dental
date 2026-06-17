@@ -367,6 +367,32 @@
   .foot__legal a{display:inline;color:rgba(167,162,148,.95);text-decoration:underline;text-underline-offset:2px}
   .foot__legal .disc{display:block;margin-top:10px;color:rgba(167,162,148,.95)}
 
+  /* ---------- art-medicine ---------- */
+  .artmed{padding:clamp(80px,13vh,150px) 0;background:var(--paper)}
+  .artmed .sec-head{max-width:66ch}
+  .artmed .lead{margin-top:22px;font-size:1.14rem;color:var(--ink);max-width:60ch;line-height:1.6}
+  .artmed__media{margin:clamp(40px,6vh,72px) 0;border-radius:4px;overflow:hidden}
+  .artmed__media img{width:100%;height:clamp(380px,70vh,760px);object-fit:cover;object-position:center 28%;display:block}
+  .artmed__media figcaption{margin-top:12px;font-size:.82rem;color:var(--muted)}
+  .artmed__body{max-width:760px;margin:0 auto}
+  .artmed__body h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.55rem,2.8vw,2.1rem);font-weight:500;margin:40px 0 12px}
+  .artmed__body > p{color:var(--muted);margin-bottom:16px;font-size:1.05rem;line-height:1.7}
+  .artmed__quote{margin:42px 0;padding:6px 0 6px 32px;border-left:2px solid var(--gold)}
+  .artmed__quote .lbl{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:18px}
+  .artmed__quote blockquote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.25rem,2.2vw,1.6rem);line-height:1.5;color:var(--ink)}
+  .artmed__quote blockquote p{margin-bottom:16px}
+  .artmed__quote cite{display:block;margin-top:8px;font-style:normal;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  .artmed__people{max-width:760px;margin:8px auto 0}
+  .artmed__people .person{padding:26px 0;border-top:1px solid var(--line)}
+  .artmed__people .person:last-child{border-bottom:1px solid var(--line)}
+  .artmed__people .person h4{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:500;margin-bottom:8px}
+  .artmed__people .person p{color:var(--muted);font-size:.98rem;line-height:1.7}
+  .artmed a,.artmed__contacts a{color:var(--gold-deep);text-decoration:underline;text-underline-offset:2px}
+  .artmed__contacts{max-width:760px;margin:42px auto 0;background:var(--cream);border-radius:4px;padding:30px 34px}
+  .artmed__contacts h4{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:14px;color:var(--ink)}
+  .artmed__contacts p{color:var(--muted);font-size:.96rem;line-height:1.85;margin:0}
+  .artmed .stats{margin-top:60px}
+
   /* ---------- responsive ---------- */
   @media(max-width:980px){
     .feature,.feature.rev{grid-template-columns:1fr;gap:34px}
@@ -706,24 +732,74 @@
     </div>
   </section>
 
-  <!-- ATMOSPHERE -->
-  <section id="art" class="atmo wrap">
-    <div class="sec-head rv">
-      <p class="eyebrow">Атмосфера</p>
-      <h2 style="margin-top:14px">Стоматология,<br>в которую возвращаются семьями</h2>
-      <p>Проект «Арт-Медицина» — современное искусство в пространстве клиники. К нам приходят пациентами, а становятся друзьями на долгие годы.</p>
-    </div>
-    <div class="atmo__media rv d1">
-      <img src="assets/team.jpg" alt="Команда Colibri Dental" />
-      <div class="cap">
-        <h3>Команда Colibri Dental</h3>
-        <p>Тепло, приватность и забота — для вас и ваших близких.</p>
+  <!-- ART-MEDICINE -->
+  <section id="art" class="artmed">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="eyebrow">Арт-Медицина</p>
+        <h2 style="margin-top:14px">Искусство, которое<br>врачует душу</h2>
+        <p class="lead">Совместный проект клиники <strong style="color:var(--ink)">Colibri Dental</strong>, галереи <strong style="color:var(--ink)">Atelier CHOUTKO</strong> и художника <strong style="color:var(--ink)">Гоши Острецова</strong> — интеграция современного искусства в пространство медицинского учреждения.</p>
       </div>
-    </div>
-    <div class="stats">
-      <div class="st rv"><b>10+</b><span>лет на рынке</span></div>
-      <div class="st rv d1"><b>100%</b><span>индивидуальный подход</span></div>
-      <div class="st rv d2"><b>∞</b><span>естественных улыбок</span></div>
+
+      <figure class="artmed__media rv d1">
+        <!-- TODO: заменить на assets/art-medicine.jpg, когда файл будет сохранён -->
+        <img src="assets/team.jpg" alt="Арт-пространство Colibri Dental — работы Гоши Острецова" />
+      </figure>
+
+      <div class="artmed__body">
+        <h3 class="rv">Концепция</h3>
+        <p class="rv">Цель проекта — помощь пациентам и поддержка художников. Проект исследует, как искусство облегчает психологический дискомфорт и снимает страхи, связанные с медицинскими манипуляциями. Для художников проект открывает новый, социально ориентированный формат работы, выходящий за рамки традиционного выставочного пространства. Часть средств от продажи произведений направляется на лечение художников и помощь нуждающимся.</p>
+
+        <h3 class="rv">Художественное решение</h3>
+        <p class="rv">Визуальная концепция разработана Гошей Острецовым: узнаваемые образы Леонардо да Винчи эпохи Возрождения соединяются с утопической реальностью автора. Масштаб инициативы предполагает именно глубокую интеграцию искусства в среду клиники, а не временную pop-up экспозицию. Ключевые произведения созданы специально для пространства Colibri Dental — с учётом её профиля и атмосферы.</p>
+
+        <div class="artmed__quote rv">
+          <p class="lbl">Слово художника</p>
+          <blockquote>
+            <p>«Культурный феномен эпохи Возрождения связан с переосмыслением античности в контексте средневековых достижений схоластики: тело человека перестаёт быть тюрьмой духа и становится союзником в постижении полноты божественной благодати. Одним из гениев человечества мы по праву считаем Леонардо да Винчи — он воплотил синтез научного и художественного откровения и навсегда изменил оптику нашего видения мира.</p>
+            <p>Своим рассветом эпоха Возрождения обязана флорентийскому семейству Медичи, на фамильном гербе которого изображены три шарика, символизирующие медицинские пилюли. Иными словами, главными заказчиками и меценатами Возрождения были медики и фармацевты. Знание о здоровье и красоте тела соединилось тогда с достижениями изобразительного искусства: художник стремился показать духовную гармонию через идеальный образ человека — как единство души и врученного ей тела.</p>
+            <p>Поэтому я беру за основу образы Леонардо да Винчи и интерпретирую их в контексте главной задачи современного искусства — познать самого себя. Врач искусно врачует тело, а художник искусством врачует душу».</p>
+          </blockquote>
+          <cite>Гоша Острецов</cite>
+        </div>
+
+        <p class="rv">Мы планируем развивать проект с новыми художниками и медицинскими учреждениями.</p>
+
+        <h3 class="rv">Почему Colibri Dental</h3>
+        <p class="rv">Выбор стоматологической клиники Colibri Dental не случаен. Это экспертная стоматология и центр клинического мастерства Nobel Biocare, лучшие врачи и оборудование высочайшего класса: хирургия Brumaba, микроскопы Leica, виниры с прорисовкой микрорельефа. Здесь решают самые сложные задачи и исправляют чужие ошибки.</p>
+
+        <h3 class="rv">Участники проекта</h3>
+        <div class="artmed__people">
+          <div class="person rv">
+            <h4>Ольга Кашмина — Colibri Dental</h4>
+            <p>Основатель и главный врач клиники. Училась в Днепропетровске, Москве, Вене, Токио, Сан-Себастьяне, Нью-Йорке. Профессиональный опыт — более 20 лет.</p>
+          </div>
+          <div class="person rv">
+            <h4>Гоша Острецов — художник</h4>
+            <p>Родился в 1967 году в Москве. С середины 1980-х годов принимает активное участие в художественной жизни России и мира. В 2009-м представлял Россию на Венецианской биеннале. Работает в разных жанрах — от живописи до перформанса. Многие работы Острецова затрагивают темы утопии и антиутопии, мифологизации реальности и создания художественных альтернатив сложившимся стереотипам. Работы находятся в Третьяковской галерее, Русском музее, ГЦСИ, галерее Saatchi и во многих частных коллекциях по всему миру.</p>
+          </div>
+          <div class="person rv">
+            <h4>Atelier CHOUTKO — галерея</h4>
+            <p>Единственная в России галерея в сегменте текстильного искусства, сочетающая продвижение современных художников с созданием индивидуальных произведений ручной работы в собственных мастерских. Входит в Ассоциацию галерей и постоянно участвует в основных ярмарках современного искусства. <a href="https://www.choutko.com" target="_blank" rel="noopener">choutko.com</a> · Большой Девятинский, дом 5.</p>
+          </div>
+        </div>
+
+        <div class="artmed__contacts rv">
+          <h4>Контакты проекта</h4>
+          <p>
+            Colibri Dental на «Маяковской» · Краснопролетарская ул., д. 7<br>
+            <a href="tel:+74955653515">+7 (495) 565-35-15</a> · <a href="https://www.colibrident.ru" target="_blank" rel="noopener">colibrident.ru</a> · <a href="mailto:info@colibridental.ru">info@colibridental.ru</a><br>
+            <a href="tel:+79255023792">+7 925 502-37-92</a> — Евгений Шутко<br>
+            Посещение по предварительной договорённости.
+          </p>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="st rv"><b>10+</b><span>лет на рынке</span></div>
+        <div class="st rv d1"><b>100%</b><span>индивидуальный подход</span></div>
+        <div class="st rv d2"><b>∞</b><span>естественных улыбок</span></div>
+      </div>
     </div>
   </section>
 
