@@ -122,7 +122,7 @@
   @keyframes cue{0%{transform:translateY(-100%)}60%,100%{transform:translateY(100%)}}
 
   /* ---------- manifesto ---------- */
-  .manifesto{padding:clamp(90px,16vh,180px) 0;text-align:center}
+  .manifesto{padding-block:clamp(90px,16vh,180px);text-align:center}
   .manifesto .q{font-size:clamp(1.7rem,4vw,3.3rem);font-weight:400;line-height:1.22;max-width:20ch;margin:28px auto 0;text-wrap:balance}
   .manifesto .q span{font-style:italic;color:var(--gold-deep)}
   .manifesto .sign{margin-top:34px;font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
@@ -135,7 +135,7 @@
 
   /* feature split */
   .feature{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(32px,5vw,80px);align-items:center;
-    padding:clamp(70px,12vh,140px) 0}
+    padding-block:clamp(70px,12vh,140px)}
   .feature.rev{grid-template-columns:1fr 1.05fr}
   .feature.rev .feature__media{order:2}
   .feature__media{position:relative;overflow:hidden;border-radius:3px}
@@ -153,7 +153,7 @@
   .feature .ulink{margin-top:34px}
 
   /* ---------- before / after slider ---------- */
-  .ba{padding:clamp(70px,11vh,130px) 0}
+  .ba{padding-block:clamp(70px,11vh,130px)}
   .ba__grid{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(30px,4vw,64px);align-items:center;margin-top:54px}
   .ba__sliders{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,32px);margin-top:50px}
   .ba__item .ba__cap{margin-top:14px;font-size:.85rem;color:var(--muted);text-align:center}
@@ -193,7 +193,7 @@
   .tech__list .it p{color:var(--on-dark-mut);font-size:.95rem;margin-top:6px}
 
   /* ---------- services ---------- */
-  .services{padding:clamp(80px,13vh,150px) 0}
+  .services{padding-block:clamp(80px,13vh,150px)}
   .srv{border-top:1px solid var(--line)}
   .srv a{display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;
     padding:30px 4px;transition:padding .45s var(--ease),color .45s}
@@ -209,7 +209,7 @@
   /* ---------- founder ---------- */
   .founder{background:var(--paper)}
   .founder__in{display:grid;grid-template-columns:.85fr 1fr;gap:clamp(36px,6vw,90px);align-items:center;
-    padding:clamp(70px,12vh,140px) 0}
+    padding-block:clamp(70px,12vh,140px)}
   .founder__media{position:relative}
   .founder__media img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;border-radius:3px}
   .founder__media .badge{position:absolute;right:-14px;bottom:30px;background:var(--ink);color:#fff;
