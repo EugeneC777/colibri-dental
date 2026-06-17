@@ -155,6 +155,8 @@
   /* ---------- before / after slider ---------- */
   .ba{padding:clamp(70px,11vh,130px) 0}
   .ba__grid{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(30px,4vw,64px);align-items:center;margin-top:54px}
+  .ba__sliders{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,32px);margin-top:50px}
+  .ba__item .ba__cap{margin-top:14px;font-size:.85rem;color:var(--muted);text-align:center}
   .compare{position:relative;width:100%;aspect-ratio:16/10;overflow:hidden;border-radius:3px;
     user-select:none;cursor:ew-resize;background:#000}
   .compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
@@ -398,6 +400,7 @@
     .feature,.feature.rev{grid-template-columns:1fr;gap:34px}
     .feature.rev .feature__media{order:0}
     .ba__grid{grid-template-columns:1fr}
+    .ba__sliders{grid-template-columns:1fr;max-width:520px;margin-inline:auto}
     .founder__in{grid-template-columns:1fr;gap:40px}
     .founder__media{max-width:440px}
     .foot__top{grid-template-columns:1fr 1fr}
@@ -528,21 +531,25 @@
     <div class="sec-head rv">
       <p class="eyebrow">Результаты</p>
       <h2 style="margin-top:14px">До и после</h2>
+      <p>Реальные работы клиники. Потяните за ползунок, чтобы увидеть преображение.</p>
     </div>
-    <div class="ba__grid">
-      <div class="compare rv" id="cmp" aria-label="Сравнение до и после">
-        <img class="before" src="assets/before-2.jpg" alt="До лечения" />
-        <img class="after"  src="assets/after-2.jpg"  alt="После лечения" />
-        <span class="lab l">До</span>
-        <span class="lab r">После</span>
-        <span class="handle" id="cmpHandle"></span>
+    <div class="ba__sliders">
+      <div class="ba__item rv">
+        <div class="compare" aria-label="Сравнение до и после">
+          <img class="before" src="assets/ba-makarova-before.jpg" alt="До лечения" />
+          <img class="after"  src="assets/ba-makarova-after.jpg"  alt="После лечения" />
+          <span class="lab l">До</span>
+          <span class="lab r">После</span>
+          <span class="handle"></span>
+        </div>
       </div>
-      <div class="ba__copy rv d1">
-        <h2>Доказательная<br>красота</h2>
-        <p>Реальные работы клиники. Потяните за ползунок, чтобы увидеть преображение.</p>
-        <div class="ba__pair">
-          <figure><img src="assets/before-1.jpg" alt="До">  <figcaption>До</figcaption></figure>
-          <figure><img src="assets/after-1.jpg" alt="После"><figcaption>После</figcaption></figure>
+      <div class="ba__item rv d1">
+        <div class="compare" aria-label="Сравнение до и после">
+          <img class="before" src="assets/ba-eknik-before.jpg" alt="До лечения" />
+          <img class="after"  src="assets/ba-eknik-after.jpg"  alt="После лечения" />
+          <span class="lab l">До</span>
+          <span class="lab r">После</span>
+          <span class="handle"></span>
         </div>
       </div>
     </div>
@@ -969,11 +976,10 @@
     document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});
   }
 
-  // before/after compare slider
-  var cmp=document.getElementById('cmp');
-  if(cmp){
+  // before/after compare sliders (несколько на странице)
+  document.querySelectorAll('.compare').forEach(function(cmp){
     var after=cmp.querySelector('.after');
-    var handle=document.getElementById('cmpHandle');
+    var handle=cmp.querySelector('.handle');
     var dragging=false;
     function setPos(clientX){
       var r=cmp.getBoundingClientRect();
@@ -982,12 +988,13 @@
       after.style.clipPath='inset(0 0 0 '+pct+'%)';
       handle.style.left=pct+'%';
     }
-    var start=function(e){dragging=true; setPos((e.touches?e.touches[0]:e).clientX);};
-    var move =function(e){if(dragging) setPos((e.touches?e.touches[0]:e).clientX);};
-    var end  =function(){dragging=false;};
-    cmp.addEventListener('mousedown',start); window.addEventListener('mousemove',move); window.addEventListener('mouseup',end);
-    cmp.addEventListener('touchstart',start,{passive:true}); window.addEventListener('touchmove',move,{passive:true}); window.addEventListener('touchend',end);
-  }
+    cmp.addEventListener('mousedown',function(e){dragging=true;setPos(e.clientX);});
+    cmp.addEventListener('touchstart',function(e){dragging=true;setPos(e.touches[0].clientX);},{passive:true});
+    window.addEventListener('mousemove',function(e){if(dragging)setPos(e.clientX);});
+    window.addEventListener('touchmove',function(e){if(dragging)setPos(e.touches[0].clientX);},{passive:true});
+    window.addEventListener('mouseup',function(){dragging=false;});
+    window.addEventListener('touchend',function(){dragging=false;});
+  });
 
   // subtle hero parallax
   if(!rm){
