@@ -242,7 +242,7 @@
 
   /* ---------- footer ---------- */
   footer{background:#141320;color:var(--on-dark-mut);padding:clamp(64px,9vh,100px) 0 40px}
-  .foot__top{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:40px;padding-bottom:54px;
+  .foot__top{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;padding-bottom:54px;
     border-bottom:1px solid rgba(255,255,255,.1)}
   .foot__brand img{height:100px;filter:brightness(0) invert(1);opacity:.95}
   .foot__brand p{margin-top:20px;font-size:.92rem;max-width:30ch}
@@ -413,11 +413,11 @@
       <img src="assets/logo.png" alt="Colibri Dental" />
     </a>
     <div class="menu" id="menu">
-      <a href="#veneers">Виниры</a>
+      <a href="#mission">Миссия</a>
+      <a href="#team">Команда</a>
+      <a href="#results">Результаты</a>
       <a href="#tech">Технологии</a>
-      <a href="#pricing">Цены</a>
-      <a href="#team">Врачи</a>
-      <a href="#reviews">Отзывы</a>
+      <a href="#art">Арт-медицина</a>
       <a href="#booking" class="cta">Записаться</a>
     </div>
     <button class="burger" id="burger" aria-label="Меню">
@@ -434,7 +434,7 @@
     <div class="wrap hero__inner">
       <p class="eyebrow on-dark rv">Colibri Dental · Авторская стоматология · Москва</p>
       <h1 class="rv d1">Новый стандарт<br><em>эстетической</em> стоматологии</h1>
-      <p class="lead rv d2">Дело не в зубах — дело в той жизни, которую дарит ваша улыбка. Мы создаём красоту, неотличимую от природы.</p>
+      <p class="lead rv d2">Ваша улыбка — шаг в новую жизнь. Создаём красоту по канонам природы.</p>
       <div class="actions rv d3">
         <a href="#booking" class="btn gold">Записаться на консультацию</a>
         <a href="#aesthetic" class="ulink" style="color:#fff">Узнать больше
@@ -446,9 +446,9 @@
   </section>
 
   <!-- MANIFESTO -->
-  <section class="manifesto wrap">
+  <section id="mission" class="manifesto wrap">
     <p class="eyebrow rv">Философия</p>
-    <p class="q rv d1">«Мы создаём улыбки, которые выглядят <span>максимально естественно</span>. О том, что мы участвовали в их создании, не узнает никто — если только вы сами не расскажете».</p>
+    <p class="q rv d1">«Мы создаём улыбки, которые выглядят <span>максимально естественно</span>. О нашем участии в их создании, не узнает никто — если только вы не расскажете».</p>
     <p class="sign rv d2">Ольга Кашмина · основатель Colibri Dental</p>
   </section>
 
@@ -461,10 +461,10 @@
     <div class="feature__copy">
       <p class="eyebrow rv">Эстетическая стоматология</p>
       <h2 class="sec-head rv d1" style="margin-top:14px">Красота в деталях,<br>которых не видно</h2>
-      <p class="rv d2" style="color:var(--muted);margin-top:20px">Каждая улыбка рождается на стыке медицины и искусства. Мы работаем с пропорциями лица, характером и светом — чтобы результат выглядел не «сделанным», а вашим собственным, только лучше.</p>
+      <p class="rv d2" style="color:var(--muted);margin-top:20px">Каждая улыбка рождается на стыке медицины, технологии и искусства. Мы работаем с пропорциями лица, характером и светом — чтобы результат выглядел не «сделанным», а натуральным, только ещё лучше.</p>
       <ul class="spec">
-        <li class="rv"><b>01</b><div><div class="t">Цифровое моделирование улыбки</div><div class="d">Вы видите будущий результат ещё до начала лечения.</div></div></li>
-        <li class="rv d1"><b>02</b><div><div class="t">Авторская ручная работа</div><div class="d">Каждая реставрация создаётся индивидуально, под микроскопом.</div></div></li>
+        <li class="rv"><b>01</b><div><div class="t">Цифровое моделирование</div><div class="d">Вы видите будущий результат ещё до начала лечения.</div></div></li>
+        <li class="rv d1"><b>02</b><div><div class="t">Авторская ручная работа</div><div class="d">Как искусство художника, каждая реставрация создаётся индивидуально, под микроскопом.</div></div></li>
         <li class="rv d2"><b>03</b><div><div class="t">Естественность результата</div><div class="d">Прозрачность эмали и анатомия, неотличимые от природных зубов.</div></div></li>
       </ul>
       <a href="#veneers" class="ulink rv d3">Перейти к винирам
@@ -483,11 +483,12 @@
     <div class="feature__copy">
       <p class="eyebrow rv">Главное направление</p>
       <h2 class="sec-head rv d1" style="margin-top:14px">Виниры нового<br>поколения</h2>
-      <p class="rv d2" style="color:var(--muted);margin-top:20px">Тончайшие виниры, <strong style="color:var(--ink)">неотличимые от натуральных зубов</strong>. Мы не «ставим виниры» — мы возвращаем улыбке её естественную красоту так, что её невозможно распознать. Это ключевая экспертиза клиники и личная специализация Ольги Кашминой — одного из ведущих специалистов по винирам.</p>
+      <p class="rv d2" style="color:var(--muted);margin-top:20px">Тончайшие виниры, <strong style="color:var(--ink)">неотличимые от натуральных зубов</strong>. Мы не «ставим виниры» — мы возвращаем улыбке её естественную красоту так, что её невозможно распознать. Над этим результатом работает команда: хирург, гнатолог, ортодонт, гигиенист. Это ключевая экспертиза клиники при личном участии Ольги Кашминой — ведущего специалиста по эстетической стоматологии и реставрации.</p>
       <ul class="spec">
         <li class="rv"><b>—</b><div><div class="t">Минимальное препарирование</div><div class="d">Бережное отношение к собственным тканям зуба.</div></div></li>
         <li class="rv d1"><b>—</b><div><div class="t">Индивидуальная анатомия</div><div class="d">Форма, оттенок и прозрачность подбираются под ваше лицо.</div></div></li>
         <li class="rv d2"><b>—</b><div><div class="t">Премиальная керамика</div><div class="d">Материалы, которые годами сохраняют живой блеск.</div></div></li>
+        <li class="rv d3"><b>—</b><div><div class="t">Гарантия</div><div class="d">Уверенность в результате — мы отвечаем за качество каждой работы.</div></div></li>
       </ul>
       <a href="#booking" class="ulink rv d3">Обсудить вашу улыбку
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -497,7 +498,7 @@
   </section>
 
   <!-- BEFORE / AFTER -->
-  <section class="ba wrap">
+  <section id="results" class="ba wrap">
     <div class="sec-head rv">
       <p class="eyebrow">Результаты</p>
       <h2 style="margin-top:14px">До и после</h2>
@@ -512,7 +513,7 @@
       </div>
       <div class="ba__copy rv d1">
         <h2>Доказательная<br>красота</h2>
-        <p>Реальные работы клиники. Потяните за ползунок, чтобы увидеть преображение — и оцените, насколько естественно выглядит результат.</p>
+        <p>Реальные работы клиники. Потяните за ползунок, чтобы увидеть преображение.</p>
         <div class="ba__pair">
           <figure><img src="assets/before-1.jpg" alt="До">  <figcaption>До</figcaption></figure>
           <figure><img src="assets/after-1.jpg" alt="После"><figcaption>После</figcaption></figure>
@@ -526,7 +527,7 @@
     <div class="wrap">
       <div class="sec-head rv">
         <p class="eyebrow on-dark">Технологии</p>
-        <h2 style="margin-top:14px">Точность, которую<br>обеспечивает оборудование</h2>
+        <h2 style="margin-top:14px">Профессиональная диагностика —<br>безусловная необходимость</h2>
         <p>Эстетика премиум-класса невозможна без диагностики премиум-класса. В клинике используется передовое оборудование — каждое решение принимается на основе точных данных, а не предположений.</p>
       </div>
       <div class="tech__media rv d1">
@@ -547,7 +548,7 @@
   <section class="services wrap">
     <div class="sec-head rv">
       <p class="eyebrow">Направления</p>
-      <h2 style="margin-top:14px">Полный спектр<br>авторской стоматологии</h2>
+      <h2 style="margin-top:14px">Полный спектр услуг</h2>
     </div>
     <div style="margin-top:46px">
       <div class="srv rv"><a href="#booking"><span class="num">01</span><span class="nm">Виниры</span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M17 7H8M17 7v9"/></svg></span></a></div>
@@ -570,7 +571,7 @@
         <div class="price-card rv">
           <span class="pc-top">Знакомство</span>
           <h3>Консультация</h3>
-          <p class="pc-desc">Осмотр, обсуждение задачи и плана преображения улыбки.</p>
+          <p class="pc-desc">Осмотр, обсуждение задачи и плана лечения.</p>
           <div class="pc-price">от 0&nbsp;000&nbsp;₽ <small>/ приём</small></div>
           <ul>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m5 13 4 4L19 7"/></svg>Консультация профильного врача</li>
@@ -617,7 +618,7 @@
       </div>
       <div class="founder__copy">
         <p class="eyebrow rv">Об основателе</p>
-        <p class="q rv d1">«Не прекращайте мечтать! Мы будем реализовывать мечты вместе».</p>
+        <p class="q rv d1">«Не прекращайте мечтать! Будем реализовывать Ваши мечты вместе».</p>
         <p class="rv d2">Ольга Кашмина — стоматолог-ортопед, основатель и главный врач клиники. Её специализация — виниры и комплексная эстетическая реабилитация улыбки.</p>
         <p class="rv d2">Вокруг себя она собрала сильную команду врачей, чтобы помогать пациентам претворять в жизнь самые смелые мечты — о здоровье, красоте и удовольствии от жизни во всех её проявлениях.</p>
         <div class="who rv d3">
@@ -633,7 +634,7 @@
       <div class="sec-head rv">
         <p class="eyebrow">Команда</p>
         <h2 style="margin-top:14px">Врачи, которым<br>доверяют семьями</h2>
-        <p>Сильная команда профессионалов своего дела — каждый ведёт пациента бережно, от первой консультации до результата, которым хочется делиться.</p>
+        <p>Команда профессионалов международного класса — бережно, от первой консультации до результата.</p>
       </div>
       <div class="team-grid">
         <div class="member rv">
@@ -642,19 +643,19 @@
           <span>Основатель · стоматолог-ортопед</span>
         </div>
         <div class="member rv d1">
-          <div class="ph"><span class="mono">К</span></div>
-          <h3>Имя Фамилия</h3>
-          <span>Стоматолог-хирург, имплантолог</span>
+          <div class="ph"><span class="mono">М</span></div>
+          <h3>Максим Медников</h3>
+          <span>Хирург, имплантолог</span>
         </div>
         <div class="member rv d2">
-          <div class="ph"><span class="mono">К</span></div>
-          <h3>Имя Фамилия</h3>
-          <span>Врач-ортодонт</span>
+          <div class="ph"><span class="mono">Е</span></div>
+          <h3>Евгений Зюбин</h3>
+          <span>Гнатолог, ортодонт</span>
         </div>
         <div class="member rv d3">
-          <div class="ph"><span class="mono">К</span></div>
-          <h3>Имя Фамилия</h3>
-          <span>Стоматолог-терапевт, гнатолог</span>
+          <div class="ph"><span class="mono">Л</span></div>
+          <h3>Люсине Векилян</h3>
+          <span>Гнатолог, ортодонт</span>
         </div>
       </div>
     </div>
@@ -676,7 +677,7 @@
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.8 5.9 20.8 7.1 14 2 9.2l6.9-.9z"/></svg>
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9.9-5 4.8 1.2 6.8L12 17.8 5.9 20.8 7.1 14 2 9.2l6.9-.9z"/></svg>
           </div>
-          <p>«Сделали виниры — и это просто моя улыбка, только лучше. Никто не верит, что они не родные».</p>
+          <p>«Сделали виниры — и это моя лучшая улыбка. Никто не верит, что зубы не родные».</p>
           <div class="by"><span class="av">А</span><div><b>Имя пациента</b><em>Виниры · 2025</em></div></div>
         </div>
         <div class="tst-card rv d1">
@@ -706,11 +707,11 @@
   </section>
 
   <!-- ATMOSPHERE -->
-  <section class="atmo wrap">
+  <section id="art" class="atmo wrap">
     <div class="sec-head rv">
       <p class="eyebrow">Атмосфера</p>
       <h2 style="margin-top:14px">Стоматология,<br>в которую возвращаются семьями</h2>
-      <p>Атмосфера «английского клуба», проект «Арт-Медицина» и арт-пространство с художниками современного искусства. К нам приходят пациентами, а становятся друзьями на долгие годы.</p>
+      <p>Проект «Арт-Медицина» — современное искусство в пространстве клиники. К нам приходят пациентами, а становятся друзьями на долгие годы.</p>
     </div>
     <div class="atmo__media rv d1">
       <img src="assets/team.jpg" alt="Команда Colibri Dental" />
@@ -721,7 +722,7 @@
     </div>
     <div class="stats">
       <div class="st rv"><b>10+</b><span>лет на рынке</span></div>
-      <div class="st rv d1"><b>2</b><span>клиники в Москве</span></div>
+      <div class="st rv d1"><b>100%</b><span>индивидуальный подход</span></div>
       <div class="st rv d2"><b>∞</b><span>естественных улыбок</span></div>
     </div>
   </section>
@@ -742,19 +743,15 @@
       <div class="booking__copy rv">
         <p class="eyebrow">Запись</p>
         <h2>Начнём с консультации</h2>
-        <p class="lead">Оставьте контакты — администратор перезвонит, ответит на вопросы и подберёт удобное время. Деликатно и без навязчивости.</p>
+        <p class="lead">Оставьте контакты — администратор перезвонит, ответит на вопросы и подберёт удобное время.</p>
         <div class="contacts-quick">
           <div class="cq">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-            <div><b>Маяковская</b><span>Краснопролетарская ул., 7</span></div>
-          </div>
-          <div class="cq">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-            <div><b>Сокол</b><span>2-я Песчаная ул., 4</span></div>
+            <div><b>м. Маяковская</b><span>Краснопролетарская ул., 7</span></div>
           </div>
           <div class="cq">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L20 18l-1 4a16 16 0 0 1-15-15Z"/></svg>
-            <div><b>+7 (000) 000-00-00</b><span>Ежедневно · 9:00–21:00</span></div>
+            <div><b>+7 (495) 565-35-15</b><span>Ежедневно · 9:00–21:00</span></div>
           </div>
         </div>
       </div>
@@ -770,14 +767,6 @@
             <label for="bf-phone">Телефон <span class="req">*</span></label>
             <input id="bf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required />
             <span class="msg">Укажите корректный номер телефона.</span>
-          </div>
-          <div class="field">
-            <label for="bf-clinic">Клиника</label>
-            <select id="bf-clinic" name="clinic">
-              <option value="Любая">Не имеет значения</option>
-              <option value="Маяковская">Маяковская — Краснопролетарская, 7</option>
-              <option value="Сокол">Сокол — 2-я Песчаная, 4</option>
-            </select>
           </div>
           <div class="field">
             <label for="bf-msg">Комментарий</label>
@@ -817,16 +806,11 @@
       <div class="foot rv d1">
         <h4>Клиника на Маяковской</h4>
         <address>Краснопролетарская ул., 7<br>Москва</address>
-        <a href="tel:+70000000000">+7 (000) 000-00-00</a>
-      </div>
-      <div class="foot rv d2">
-        <h4>Клиника на Соколе</h4>
-        <address>2-я Песчаная ул., 4<br>Москва</address>
-        <a href="tel:+70000000000">+7 (000) 000-00-00</a>
+        <a href="tel:+74955653515">+7 (495) 565-35-15</a>
       </div>
       <div class="foot rv d3">
         <h4>Записаться</h4>
-        <a href="tel:+70000000000">+7 (000) 000-00-00</a>
+        <a href="tel:+74955653515">+7 (495) 565-35-15</a>
         <a href="mailto:hello@colibrident.ru">hello@colibrident.ru</a>
         <a href="https://www.colibrident.ru">colibrident.ru</a>
       </div>
@@ -839,7 +823,7 @@
     </div>
     <div class="foot__bot">
       <span>© 2026 Colibri Dental. Авторская стоматология. Москва.</span>
-      <span>Маяковская · Сокол</span>
+      <span>м. Маяковская</span>
     </div>
   </div>
 </footer>
@@ -961,7 +945,6 @@
       var data={
         name:name.value.trim(),
         phone:phone.value.trim(),
-        clinic:document.getElementById('bf-clinic').value,
         message:document.getElementById('bf-msg').value.trim()
       };
       // TODO: подключить доставку заявки (Formspree / Telegram-бот / e-mail / CRM).
