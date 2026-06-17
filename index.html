@@ -371,9 +371,9 @@
   .artmed{padding:clamp(80px,13vh,150px) 0;background:var(--paper)}
   .artmed .sec-head{max-width:66ch}
   .artmed .lead{margin-top:22px;font-size:1.14rem;color:var(--ink);max-width:60ch;line-height:1.6}
-  .artmed__media{margin:clamp(40px,6vh,72px) 0;border-radius:4px;overflow:hidden}
-  .artmed__media img{width:100%;height:clamp(380px,70vh,760px);object-fit:cover;object-position:center 28%;display:block}
-  .artmed__media figcaption{margin-top:12px;font-size:.82rem;color:var(--muted)}
+  .artmed__media{margin:clamp(40px,6vh,72px) auto 0;max-width:560px;text-align:center}
+  .artmed__media img{width:100%;height:auto;display:block;border-radius:4px;box-shadow:0 30px 70px -40px rgba(26,25,41,.55)}
+  .artmed__media figcaption{margin-top:14px;font-size:.82rem;color:var(--muted)}
   .artmed__body{max-width:760px;margin:0 auto}
   .artmed__body h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.55rem,2.8vw,2.1rem);font-weight:500;margin:40px 0 12px}
   .artmed__body > p{color:var(--muted);margin-bottom:16px;font-size:1.05rem;line-height:1.7}
@@ -742,8 +742,8 @@
       </div>
 
       <figure class="artmed__media rv d1">
-        <!-- TODO: заменить на assets/art-medicine.jpg, когда файл будет сохранён -->
-        <img src="assets/team.jpg" alt="Арт-пространство Colibri Dental — работы Гоши Острецова" />
+        <img src="assets/art-medicine.jpg" alt="Арт-пространство Colibri Dental — работа Гоши Острецова по мотивам Леонардо да Винчи" />
+        <figcaption>Гоша Острецов. Из проекта «Арт-Медицина» для Colibri Dental</figcaption>
       </figure>
 
       <div class="artmed__body">
