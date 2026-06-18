@@ -395,6 +395,22 @@
   .artmed__contacts p{color:var(--muted);font-size:.96rem;line-height:1.85;margin:0}
   .artmed .stats{margin-top:60px}
 
+  /* manifesto credentials */
+  .creds{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:clamp(40px,6vh,64px)}
+  .creds .cred{padding:6px clamp(28px,5vw,56px)}
+  .creds .cred strong{display:block;font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,3vw,2.3rem);font-weight:500;color:var(--gold-deep);line-height:1}
+  .creds .cred span{display:block;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+  .creds .cred + .cred{border-left:1px solid var(--line)}
+
+  /* tech extra — безграничные возможности */
+  .tech__extra{margin-top:clamp(40px,6vh,64px);border:1px solid rgba(176,141,87,.4);border-radius:6px;padding:clamp(28px,4vw,46px);background:rgba(255,255,255,.03)}
+  .tech__extra > h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:500;color:var(--gold)}
+  .tech__extra-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,48px);margin-top:26px}
+  .te-item{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start}
+  .te-item .te-n{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--gold);line-height:1.3}
+  .te-item h4{font-family:'Inter',sans-serif;font-weight:500;font-size:1.15rem;color:#fff;letter-spacing:0}
+  .te-item p{color:var(--on-dark-mut);font-size:.95rem;margin-top:6px;line-height:1.6}
+
   /* ---------- responsive ---------- */
   @media(max-width:980px){
     .feature,.feature.rev{grid-template-columns:1fr;gap:34px}
@@ -405,6 +421,7 @@
     .founder__media{max-width:440px}
     .foot__top{grid-template-columns:1fr 1fr}
     .tech__list{grid-template-columns:1fr}
+    .tech__extra-grid{grid-template-columns:1fr;gap:26px}
     .price-grid{grid-template-columns:1fr;max-width:480px;margin-inline:auto}
     .team-grid{grid-template-columns:repeat(2,1fr)}
     .tst-grid{grid-template-columns:1fr;max-width:520px;margin-inline:auto}
@@ -427,6 +444,8 @@
     .srv .ar{display:none}
     .team-grid{grid-template-columns:1fr 1fr;gap:14px}
     .member h3{font-size:1.3rem}
+    .creds{flex-direction:column;gap:22px}
+    .creds .cred + .cred{border-left:none;border-top:1px solid var(--line);padding-top:22px}
   }
   @media (prefers-reduced-motion:reduce){
     *{animation:none!important;scroll-behavior:auto!important}
@@ -479,6 +498,10 @@
     <p class="eyebrow rv">Философия</p>
     <p class="q rv d1">«Мы создаём улыбки, которые выглядят <span>максимально естественно</span>. О нашем участии в их создании, не узнает никто — если только вы не расскажете».</p>
     <p class="sign rv d2">Ольга Кашмина · основатель Colibri Dental</p>
+    <div class="creds rv d3">
+      <div class="cred"><strong>Forbes</strong><span>в списке с 2018 года</span></div>
+      <div class="cred"><strong>Nobel Biocare</strong><span>центр клинического мастерства</span></div>
+    </div>
   </section>
 
   <!-- AESTHETIC / FEATURE -->
@@ -506,7 +529,7 @@
   <section id="veneers" class="founder" style="background:var(--paper)">
   <div class="wrap feature rev" style="padding-block:clamp(70px,12vh,140px)">
     <div class="feature__media rv">
-      <img src="assets/after-1.jpg" alt="Результат: виниры нового поколения" />
+      <img src="assets/veneers-result.jpg" alt="Счастливая пациентка после лечения в Colibri Dental" />
       <span class="tag">Результат работы клиники</span>
     </div>
     <div class="feature__copy">
@@ -514,7 +537,7 @@
       <h2 class="sec-head rv d1" style="margin-top:14px">Виниры нового<br>поколения</h2>
       <p class="rv d2" style="color:var(--muted);margin-top:20px">Тончайшие виниры, <strong style="color:var(--ink)">неотличимые от натуральных зубов</strong>. Мы не «ставим виниры» — мы возвращаем улыбке её естественную красоту так, что её невозможно распознать. Над этим результатом работает команда: хирург, гнатолог, ортодонт, гигиенист. Это ключевая экспертиза клиники при личном участии Ольги Кашминой — ведущего специалиста по эстетической стоматологии и реставрации.</p>
       <ul class="spec">
-        <li class="rv"><b>—</b><div><div class="t">Минимальное препарирование</div><div class="d">Бережное отношение к собственным тканям зуба.</div></div></li>
+        <li class="rv"><b>—</b><div><div class="t">Минимальная обточка</div><div class="d">Бережное отношение к собственным тканям зуба.</div></div></li>
         <li class="rv d1"><b>—</b><div><div class="t">Индивидуальная анатомия</div><div class="d">Форма, оттенок и прозрачность подбираются под ваше лицо.</div></div></li>
         <li class="rv d2"><b>—</b><div><div class="t">Премиальная керамика</div><div class="d">Материалы, которые годами сохраняют живой блеск.</div></div></li>
         <li class="rv d3"><b>—</b><div><div class="t">Гарантия</div><div class="d">Уверенность в результате — мы отвечаем за качество каждой работы.</div></div></li>
@@ -574,6 +597,13 @@
         <div class="it rv d1"><span class="n">04</span><div><h3>Микроскоп Leica</h3><p>Многократное увеличение для ювелирной точности каждой манипуляции.</p></div></div>
         <div class="it rv"><span class="n">05</span><div><h3>Современные 3D-сканеры</h3><p>Цифровые слепки без дискомфорта и моделирование улыбки в цифре.</p></div></div>
       </div>
+      <div class="tech__extra rv">
+        <h3>Безграничные возможности</h3>
+        <div class="tech__extra-grid">
+          <div class="te-item"><span class="te-n">01</span><div><h4>Хирургия BRUMABA</h4><p>Вершина дентальной хирургии — с наркозным и дыхательным аппаратами.</p></div></div>
+          <div class="te-item"><span class="te-n">02</span><div><h4>Лечение во сне и под седацией</h4><p>Профессиональное решение для сложных задач: многомесячное лечение за один день, без боли.</p></div></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -589,6 +619,8 @@
       <div class="srv rv"><a href="#booking"><span class="num">03</span><span class="nm">Ортодонтия</span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M17 7H8M17 7v9"/></svg></span></a></div>
       <div class="srv rv"><a href="#booking"><span class="num">04</span><span class="nm">Гнатология</span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M17 7H8M17 7v9"/></svg></span></a></div>
       <div class="srv rv"><a href="#booking"><span class="num">05</span><span class="nm">Хирургия</span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M17 7H8M17 7v9"/></svg></span></a></div>
+      <div class="srv rv"><a href="#booking"><span class="num">06</span><span class="nm">Семейная стоматология</span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M17 7H8M17 7v9"/></svg></span></a></div>
+      <div class="srv rv"><a href="#booking"><span class="num">07</span><span class="nm">Гигиена</span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M17 7H8M17 7v9"/></svg></span></a></div>
     </div>
   </section>
 
